@@ -38,11 +38,11 @@ user_pref("dom.enable_user_timing",				false);
 
 // PREF: Disable Web Audio API
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1288359
-user_pref("dom.webaudio.enabled",				false);
+//user_pref("dom.webaudio.enabled",				false);
 
 // PREF: Disable Location-Aware Browsing (geolocation)
 // https://www.mozilla.org/en-US/firefox/geolocation/
-user_pref("geo.enabled",					false);
+//user_pref("geo.enabled",					false);
 
 // PREF: When geolocation is enabled, use Mozilla geolocation service instead of Google
 // https://bugzilla.mozilla.org/show_bug.cgi?id=689252
@@ -77,7 +77,7 @@ user_pref("dom.network.enabled",				false);
 
 // PREF: Disable WebRTC entirely to prevent leaking internal IP addresses (Firefox < 42)
 // NOTICE: Disabling WebRTC breaks peer-to-peer file sharing tools (reep.io ...)
-user_pref("media.peerconnection.enabled",			false);
+//user_pref("media.peerconnection.enabled",			false);
 
 // PREF: Don't reveal your internal IP when WebRTC is enabled (Firefox >= 42)
 // https://wiki.mozilla.org/Media/WebRTC/Privacy
@@ -89,10 +89,10 @@ user_pref("media.peerconnection.ice.no_host",			true); // Firefox >= 52
 // https://wiki.mozilla.org/Media/getUserMedia
 // https://blog.mozilla.org/futurereleases/2013/01/12/capture-local-camera-and-microphone-streams-with-getusermedia-now-enabled-in-firefox/
 // https://developer.mozilla.org/en-US/docs/Web/API/Navigator
-user_pref("media.navigator.enabled",				false);
-user_pref("media.navigator.video.enabled",			false);
-user_pref("media.getusermedia.screensharing.enabled",		false);
-user_pref("media.getusermedia.audiocapture.enabled",		false);
+//user_pref("media.navigator.enabled",				false);
+//user_pref("media.navigator.video.enabled",			false);
+//user_pref("media.getusermedia.screensharing.enabled",		false);
+//user_pref("media.getusermedia.audiocapture.enabled",		false);
 
 // PREF: Disable battery API (Firefox < 52)
 // https://developer.mozilla.org/en-US/docs/Web/API/BatteryManager
@@ -175,7 +175,7 @@ user_pref("dom.archivereader.enabled",				false);
 // PREF: Disable webGL
 // https://en.wikipedia.org/wiki/WebGL
 // https://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
-user_pref("webgl.disabled",					true);
+//user_pref("webgl.disabled",					true);
 // PREF: When webGL is enabled, use the minimum capability mode
 user_pref("webgl.min_capability_mode",				true);
 // PREF: When webGL is enabled, disable webGL extensions
@@ -197,7 +197,7 @@ user_pref("webgl.enable-debug-renderer-info",			false);
 user_pref("dom.maxHardwareConcurrency",				2);
 
 // PREF: Disable WebAssembly
-user_pref("javascript.options.wasm",				false);
+//user_pref("javascript.options.wasm",				false);
 
 /******************************************************************************
  * SECTION: Misc                                                              *
@@ -235,11 +235,11 @@ user_pref("javascript.use_us_english_locale",			true);
 
 // PREF: Do not submit invalid URIs entered in the address bar to the default search engine
 // http://kb.mozillazine.org/Keyword.enabled
-user_pref("keyword.enabled",					false);
+//user_pref("keyword.enabled",					false);
 
 // PREF: Don't trim HTTP off of URLs in the address bar.
 // https://bugzilla.mozilla.org/show_bug.cgi?id=665580
-user_pref("browser.urlbar.trimURLs",				false);
+//user_pref("browser.urlbar.trimURLs",				false);
 
 // PREF: Don't try to guess domain names when entering an invalid domain name in URL bar
 // http://www-archive.mozilla.org/docs/end-user/domain-guessing.html
@@ -291,12 +291,12 @@ user_pref("browser.urlbar.filter.javascript",			true);
 // https://www.mozilla.org/en-US/security/advisories/mfsa2015-29/
 // https://www.mozilla.org/en-US/security/advisories/mfsa2015-50/
 // https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2712
-user_pref("javascript.options.asmjs",				false);
+//user_pref("javascript.options.asmjs",				false);
 
 // PREF: Disable SVG in OpenType fonts
 // https://wiki.mozilla.org/SVGOpenTypeFonts
 // https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle
-user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
+//user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
 
 // PREF: Disable in-content SVG rendering (Firefox >= 53) (disabled)
 // NOTICE-DISABLED: Disabling SVG support breaks many UI elements on many sites
@@ -320,7 +320,7 @@ user_pref("browser.startup.homepage_override.buildID",		"20100101");
 // PREF: Prevent font fingerprinting
 // https://browserleaks.com/fonts
 // https://github.com/pyllyukko/user.js/issues/120
-user_pref("browser.display.use_document_fonts",			0);
+//user_pref("browser.display.use_document_fonts",			0);
 
 // PREF: Enable only whitelisted URL protocol handlers
 // http://kb.mozillazine.org/Network.protocol-handler.external-default
@@ -438,16 +438,16 @@ user_pref("extensions.blocklist.url",				"https://blocklist.addons.mozilla.org/b
 // PREF: Disable WebIDE
 // https://trac.torproject.org/projects/tor/ticket/16222
 // https://developer.mozilla.org/docs/Tools/WebIDE
-user_pref("devtools.webide.enabled",				false);
-user_pref("devtools.webide.autoinstallADBHelper",		false);
-user_pref("devtools.webide.autoinstallFxdtAdapters",		false);
+//user_pref("devtools.webide.enabled",				false);
+//user_pref("devtools.webide.autoinstallADBHelper",		false);
+//user_pref("devtools.webide.autoinstallFxdtAdapters",		false);
 
 // PREF: Disable remote debugging
 // https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_Firefox_Desktop
 // https://developer.mozilla.org/en-US/docs/Tools/Tools_Toolbox#Advanced_settings
-user_pref("devtools.debugger.remote-enabled",			false);
-user_pref("devtools.chrome.enabled",				false);
-user_pref("devtools.debugger.force-local",			true);
+//user_pref("devtools.debugger.remote-enabled",			false);
+//user_pref("devtools.chrome.enabled",				false);
+//user_pref("devtools.debugger.force-local",			true);
 
 // PREF: Disable Mozilla telemetry/experiments
 // https://wiki.mozilla.org/Platform/Features/Telemetry
@@ -509,13 +509,13 @@ user_pref("privacy.userContext.enabled",			true);
 // PREF: Enable hardening against various fingerprinting vectors (Tor Uplift project)
 // https://wiki.mozilla.org/Security/Tor_Uplift/Tracking
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1333933
-user_pref("privacy.resistFingerprinting",			true);
+//user_pref("privacy.resistFingerprinting",			true);
 
 // PREF: Disable the built-in PDF viewer
 // https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2743
 // https://blog.mozilla.org/security/2015/08/06/firefox-exploit-found-in-the-wild/
 // https://www.mozilla.org/en-US/security/advisories/mfsa2015-69/
-user_pref("pdfjs.disabled",					true);
+//user_pref("pdfjs.disabled",					true);
 
 // PREF: Disable collection/sending of the health report (healthreport.sqlite*)
 // https://support.mozilla.org/en-US/kb/firefox-health-report-understand-your-browser-perf
@@ -547,7 +547,7 @@ user_pref("loop.logDomains",					false);
 // PREF: Enforce checking for Firefox updates
 // http://kb.mozillazine.org/App.update.enabled
 // NOTICE: Update check page might incorrectly report Firefox ESR as out-of-date
-user_pref("app.update.enabled",                 true);
+//user_pref("app.update.enabled",                 true);
 
 // PREF: Enable blocking reported web forgeries
 // https://wiki.mozilla.org/Security/Safe_Browsing
@@ -615,16 +615,16 @@ user_pref("network.dns.blockDotOnion",				true);
 
 // PREF: Disable search suggestions in the search bar
 // http://kb.mozillazine.org/Browser.search.suggest.enabled
-user_pref("browser.search.suggest.enabled",			false);
+//user_pref("browser.search.suggest.enabled",			false);
 
 // PREF: Disable "Show search suggestions in location bar results"
-user_pref("browser.urlbar.suggest.searches",			false);
+//user_pref("browser.urlbar.suggest.searches",			false);
 // PREF: When using the location bar, don't suggest URLs from browsing history
 user_pref("browser.urlbar.suggest.history",			false);
 
 // PREF: Disable SSDP
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1111967
-user_pref("browser.casting.enabled",				false);
+//user_pref("browser.casting.enabled",				false);
 
 // PREF: Disable automatic downloading of OpenH264 codec
 // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_media-capabilities
@@ -680,7 +680,7 @@ user_pref("security.sri.enable",				true);
 // https://dnt-dashboard.mozilla.org
 // https://github.com/pyllyukko/user.js/issues/11
 // NOTICE: Do No Track must be enabled manually
-//user_pref("privacy.donottrackheader.enabled",		true);
+user_pref("privacy.donottrackheader.enabled",		true);
 
 // PREF: Send a referer header with the target URI as the source
 // https://bugzilla.mozilla.org/show_bug.cgi?id=822869
@@ -699,13 +699,13 @@ user_pref("network.http.referer.spoofSource",			true);
 // http://kb.mozillazine.org/Network.cookie.cookieBehavior#1
 // NOTICE: Blocking 3rd-party cookies breaks a number of payment gateways
 // CIS 2.5.1
-user_pref("network.cookie.cookieBehavior",			1);
+//user_pref("network.cookie.cookieBehavior",			1);
 
 // PREF: Enable first-party isolation
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1299996
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1260931
 // https://wiki.mozilla.org/Security/FirstPartyIsolation
-user_pref("privacy.firstparty.isolate",				true);
+//user_pref("privacy.firstparty.isolate",				true);
 
 // PREF: Make sure that third-party cookies (if enabled) never persist beyond the session.
 // https://feeding.cloud.geek.nz/posts/tweaking-cookies-for-privacy-in-firefox/
@@ -788,7 +788,7 @@ user_pref("browser.download.manager.retention",			0);
 // PREF: Disable password manager (disabled)
 // NOTICE: Make sure to set a Master password to protect Firefox's password storage against basic malware that could extract your password information
 // CIS Version 1.2.0 October 21st, 2011 2.5.2
-// user_pref("signon.rememberSignons",				false);
+user_pref("signon.rememberSignons",				false);
 
 // PREF: Disable form autofill, don't save information entered in web page forms and the Search Bar
 user_pref("browser.formfill.enable",				false);
