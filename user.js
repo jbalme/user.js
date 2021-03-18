@@ -29,12 +29,12 @@
 // PREF: Disable DOM timing API
 // https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI
 // https://www.w3.org/TR/navigation-timing/#privacy
-user_pref("dom.enable_performance",				false);
+//user_pref("dom.enable_performance",				false);
 
 // PREF: Make sure the User Timing API does not provide a new high resolution timestamp
 // https://trac.torproject.org/projects/tor/ticket/16336
 // https://www.w3.org/TR/2013/REC-user-timing-20131212/#privacy-security
-user_pref("dom.enable_user_timing",				false);
+//user_pref("dom.enable_user_timing",				false);
 
 // PREF: Disable Web Audio API
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1288359
@@ -68,12 +68,12 @@ user_pref("dom.mozTCPSocket.enabled",				false);
 // https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API
 // https://wicg.github.io/netinfo/#privacy-considerations
 // https://bugzilla.mozilla.org/show_bug.cgi?id=960426
-user_pref("dom.netinfo.enabled",				false);
+//user_pref("dom.netinfo.enabled",				false);
 
 // PREF: Disable network API (Firefox < 32)
 // https://developer.mozilla.org/en-US/docs/Web/API/Connection/onchange
 // https://www.torproject.org/projects/torbrowser/design/#fingerprinting-defenses
-user_pref("dom.network.enabled",				false);
+//user_pref("dom.network.enabled",				false);
 
 // PREF: Disable WebRTC entirely to prevent leaking internal IP addresses (Firefox < 42)
 // NOTICE: Disabling WebRTC breaks peer-to-peer file sharing tools (reep.io ...)
@@ -105,7 +105,7 @@ user_pref("dom.telephony.enabled",				false);
 
 // PREF: Disable "beacon" asynchronous HTTP transfers (used for analytics)
 // https://developer.mozilla.org/en-US/docs/Web/API/navigator.sendBeacon
-user_pref("beacon.enabled",					false);
+//user_pref("beacon.enabled",					false);
 
 // PREF: Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript (disabled)
 // NOTICE-DISABLED: Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)
@@ -121,11 +121,11 @@ user_pref("beacon.enabled",					false);
 // https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html
 // https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
 // https://wiki.mozilla.org/HTML5_Speech_API
-user_pref("media.webspeech.recognition.enable",			false);
+//user_pref("media.webspeech.recognition.enable",			false);
 
 // PREF: Disable speech synthesis
 // https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
-user_pref("media.webspeech.synth.enabled",			false);
+//user_pref("media.webspeech.synth.enabled",			false);
 
 // PREF: Disable sensor API
 // https://wiki.mozilla.org/Sensor_API
@@ -133,7 +133,7 @@ user_pref("device.sensors.enabled",				false);
 
 // PREF: Disable pinging URIs specified in HTML <a> ping= attributes
 // http://kb.mozillazine.org/Browser.send_pings
-user_pref("browser.send_pings",					false);
+//user_pref("browser.send_pings",					false);
 
 // PREF: When browser pings are enabled, only allow pinging the same host as the origin page
 // http://kb.mozillazine.org/Browser.send_pings.require_same_host
@@ -153,34 +153,34 @@ user_pref("browser.send_pings.require_same_host",		true);
 // PREF: Disable gamepad API to prevent USB device enumeration
 // https://www.w3.org/TR/gamepad/
 // https://trac.torproject.org/projects/tor/ticket/13023
-user_pref("dom.gamepad.enabled",				false);
+//user_pref("dom.gamepad.enabled",				false);
 
 // PREF: Disable virtual reality devices APIs
 // https://developer.mozilla.org/en-US/Firefox/Releases/36#Interfaces.2FAPIs.2FDOM
 // https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API
-user_pref("dom.vr.enabled",					false);
+//user_pref("dom.vr.enabled",					false);
 
 // PREF: Disable vibrator API
-user_pref("dom.vibrator.enabled",           false);
+//user_pref("dom.vibrator.enabled",           false);
 
 // PREF: Disable resource timing API
 // https://www.w3.org/TR/resource-timing/#privacy-security
-user_pref("dom.enable_resource_timing",				false);
+//user_pref("dom.enable_resource_timing",				false);
 
 // PREF: Disable Archive API (Firefox < 54)
 // https://wiki.mozilla.org/WebAPI/ArchiveAPI
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1342361
-user_pref("dom.archivereader.enabled",				false);
+//user_pref("dom.archivereader.enabled",				false);
 
 // PREF: Disable webGL
 // https://en.wikipedia.org/wiki/WebGL
 // https://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
 //user_pref("webgl.disabled",					true);
 // PREF: When webGL is enabled, use the minimum capability mode
-user_pref("webgl.min_capability_mode",				true);
+//user_pref("webgl.min_capability_mode",				true);
 // PREF: When webGL is enabled, disable webGL extensions
 // https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API#WebGL_debugging_and_testing
-user_pref("webgl.disable-extensions",				true);
+//user_pref("webgl.disable-extensions",				true);
 // PREF: When webGL is enabled, force enabling it even when layer acceleration is not supported
 // https://trac.torproject.org/projects/tor/ticket/18603
 user_pref("webgl.disable-fail-if-major-performance-caveat",	true);
@@ -226,7 +226,7 @@ user_pref("browser.search.geoSpecificDefaults",			false);
 
 // PREF: Do not automatically send selection to clipboard on some Linux platforms
 // http://kb.mozillazine.org/Clipboard.autocopy
-user_pref("clipboard.autocopy",					false);
+//user_pref("clipboard.autocopy",					false);
 
 // PREF: Prevent leaking application locale/date format using JavaScript
 // https://bugzilla.mozilla.org/show_bug.cgi?id=867501
@@ -255,7 +255,7 @@ user_pref("network.proxy.socks_remote_dns",			true);
 
 // PREF: Don't monitor OS online/offline connection state
 // https://trac.torproject.org/projects/tor/ticket/18945
-user_pref("network.manage-offline-status",			false);
+//user_pref("network.manage-offline-status",			false);
 
 // PREF: Enforce Mixed Active Content Blocking
 // https://support.mozilla.org/t5/Protect-your-privacy/Mixed-content-blocking-in-Firefox/ta-p/10990
@@ -274,17 +274,17 @@ user_pref("network.jar.open-unsafe-types",			false);
 
 // CIS 2.7.4 Disable Scripting of Plugins by JavaScript
 // http://forums.mozillazine.org/viewtopic.php?f=7&t=153889
-user_pref("security.xpconnect.plugin.unrestricted",		false);
+//user_pref("security.xpconnect.plugin.unrestricted",		false);
 
 // PREF: Set File URI Origin Policy
 // http://kb.mozillazine.org/Security.fileuri.strict_origin_policy
 // CIS Mozilla Firefox 24 ESR v1.0.0 - 3.8
-user_pref("security.fileuri.strict_origin_policy",		true);
+//user_pref("security.fileuri.strict_origin_policy",		true);
 
 // PREF: Disable Displaying Javascript in History URLs
 // http://kb.mozillazine.org/Browser.urlbar.filter.javascript
 // CIS 2.3.6 
-user_pref("browser.urlbar.filter.javascript",			true);
+//user_pref("browser.urlbar.filter.javascript",			true);
 
 // PREF: Disable asm.js
 // http://asmjs.org/
@@ -395,7 +395,7 @@ user_pref("dom.ipc.plugins.reportCrashURL",			false);
 // PREF: When Flash is enabled, download and use Mozilla SWF URIs blocklist
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1237198
 // https://github.com/mozilla-services/shavar-plugin-blocklist
-user_pref("browser.safebrowsing.blockedURIs.enabled", true);
+//user_pref("browser.safebrowsing.blockedURIs.enabled", true);
 
 // PREF: Disable Shumway (Mozilla Flash renderer)
 // https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Shumway
@@ -689,7 +689,7 @@ user_pref("privacy.donottrackheader.enabled",		true);
 // NOTICE: Spoofing referers breaks visualisation of 3rd-party sites on the Lightbeam addon
 // NOTICE: Spoofing referers disables CSRF protection on some login pages not implementing origin-header/cookie+token based CSRF protection
 // TODO: https://github.com/pyllyukko/user.js/issues/94, commented-out XOriginPolicy/XOriginTrimmingPolicy = 2 prefs
-user_pref("network.http.referer.spoofSource",			true);
+//user_pref("network.http.referer.spoofSource",			true);
 
 // PREF: Don't send referer headers when following links across different domains (disabled)
 // https://github.com/pyllyukko/user.js/issues/227
@@ -711,7 +711,7 @@ user_pref("network.http.referer.spoofSource",			true);
 // https://feeding.cloud.geek.nz/posts/tweaking-cookies-for-privacy-in-firefox/
 // http://kb.mozillazine.org/Network.cookie.thirdparty.sessionOnly
 // https://developer.mozilla.org/en-US/docs/Cookies_Preferences_in_Mozilla#network.cookie.thirdparty.sessionOnly
-user_pref("network.cookie.thirdparty.sessionOnly",		true);
+//user_pref("network.cookie.thirdparty.sessionOnly",		true);
 
 // PREF: Spoof User-agent (disabled)
 //user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
@@ -742,28 +742,28 @@ user_pref("browser.cache.offline.enable",			false);
 // NOTICE-DISABLED: Installing user.js will **remove your saved passwords** (https://github.com/pyllyukko/user.js/issues/27)
 // NOTICE: Clearing open windows on Firefox exit causes 2 windows to open when Firefox starts https://bugzilla.mozilla.org/show_bug.cgi?id=1334945
 // NOTICE: Having either of privacy.clearOnShutdown.history or privacy.clearOnShutdown.offlineApps as true will clear service workers when closing Firefox
-user_pref("privacy.sanitize.sanitizeOnShutdown",		true);
+//user_pref("privacy.sanitize.sanitizeOnShutdown",		true);
 user_pref("privacy.clearOnShutdown.cache",			true);
 //user_pref("privacy.clearOnShutdown.cookies",			true);
-user_pref("privacy.clearOnShutdown.downloads",			true);
+//user_pref("privacy.clearOnShutdown.downloads",			true);
 user_pref("privacy.clearOnShutdown.formdata",			true);
 user_pref("privacy.clearOnShutdown.history",			true);
-user_pref("privacy.clearOnShutdown.offlineApps",		true);
+//user_pref("privacy.clearOnShutdown.offlineApps",		true);
 //user_pref("privacy.clearOnShutdown.passwords",			true);
-user_pref("privacy.clearOnShutdown.sessions",			true);
+//user_pref("privacy.clearOnShutdown.sessions",			true);
 user_pref("privacy.clearOnShutdown.openWindows",		true);
 
 // PREF: Set time range to "Everything" as default in "Clear Recent History"
 user_pref("privacy.sanitize.timeSpan",				0);
 
 // PREF: Clear everything but "Site Preferences" in "Clear Recent History"
-user_pref("privacy.cpd.offlineApps",				true);
+//user_pref("privacy.cpd.offlineApps",				true);
 user_pref("privacy.cpd.cache",					true);
-user_pref("privacy.cpd.cookies",				true);
-user_pref("privacy.cpd.downloads",				true);
+//user_pref("privacy.cpd.cookies",				true);
+//user_pref("privacy.cpd.downloads",				true);
 user_pref("privacy.cpd.formdata",				true);
 user_pref("privacy.cpd.history",				true);
-user_pref("privacy.cpd.sessions",				true);
+//user_pref("privacy.cpd.sessions",				true);
 
 // PREF: Don't remember browsing history
 user_pref("places.history.enabled",				false);
